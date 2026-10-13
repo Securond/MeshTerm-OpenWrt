@@ -233,7 +233,7 @@ export PIP_NO_CACHE_DIR=1
 export TEMP="$PIP_TMP"
 export TEMPDIR="$PIP_TMP"
 
-info "pip install -e $CHECKOUT (this compiles dbus-fast; it can take several minutes)"
+info "pip install -e $CHECKOUT (this may compile dbus-fast; it can take several minutes)"
 # Stop a heavy neighbour if the operator left Home Assistant running. Do not fail if
 # the service is absent.
 if [ -x /etc/init.d/homeassistant ]; then
@@ -243,8 +243,13 @@ fi
 
 "$VENV/bin/pip" install -U pip setuptools wheel \
     || die "pip bootstrap failed"
-"$VENV/bin/pip" install -e "$CHECKOUT" \
-    || die "pip install failed -- free RAM, set SKIP_SWAP=0, and run the script again"
+
+# Try to install with --prefer-binary first (faster if wheels available)
+"$VENV/bin/pip" install --prefer-binary -e "$CHECKOUT" || {
+    info "Binary wheels not available, compiling from source (this can take 5-10 minutes)..."
+    "$VENV/bin/pip" install -e "$CHECKOUT" \
+        || die "pip install failed -- free RAM, set SKIP_SWAP=0, and run the script again"
+}
 
 # --- 6. wrapper ------------------------------------------------------------------------
 log "6/7  /usr/bin/meshterm"
