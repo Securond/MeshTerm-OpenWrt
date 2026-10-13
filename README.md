@@ -85,6 +85,8 @@ The setup script performs the following steps:
 6. **Wrapper** - Creates `/usr/bin/meshterm` with proper UTF-8 and TERM settings
 7. **LuCI integration** - Installs web terminal via ttyd (optional)
 
+**Note:** Installation may take 5-10 minutes because some Python packages (dbus-fast, pycryptodome) need to be compiled from source on ARMv7 musl. The script uses `--prefer-binary` to use pre-built wheels when available for faster installation.
+
 ## Configuration Options
 
 You can customize the installation with environment variables:
@@ -388,6 +390,8 @@ sh openwrt-setup.sh
 5. **Venv + pip** - Создание виртуального окружения Python и установка MeshTerm
 6. **Wrapper** - Создание `/usr/bin/meshterm` с правильными настройками UTF-8 и TERM
 7. **Интеграция LuCI** - Установка веб-терминала через ttyd (опционально)
+
+**Примечание:** Установка может занять 5-10 минут, так как некоторые Python пакеты (dbus-fast, pycryptodome) нужно скомпилировать из исходников на ARMv7 musl. Скрипт использует `--prefer-binary` для использования готовых wheels когда они доступны для более быстрой установки.
 
 ## Параметры конфигурации
 
