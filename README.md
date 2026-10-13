@@ -45,10 +45,10 @@ Full-featured TUI MeshTerm client for Meshtastic network, adapted for OpenWrt / 
 
 ```bash
 ssh root@your-router
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/MeshTerm-OpenWrt/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/Securond/MeshTerm-OpenWrt/main/install.sh | sh
 ```
 
-Replace `YOUR_USERNAME` with your GitHub username.
+Replace `Securond` with your GitHub username.
 
 That's it! The script will:
 - Install all dependencies
@@ -66,7 +66,7 @@ ssh root@your-router
 # Clone this repository
 opkg update
 opkg install git-http ca-bundle
-git clone --depth 1 https://github.com/YOUR_USERNAME/MeshTerm-OpenWrt.git /opt/meshterm-install
+git clone --depth 1 https://github.com/Securond/MeshTerm-OpenWrt.git /opt/meshterm-install
 
 # Run the setup script
 cd /opt/meshterm-install
@@ -270,7 +270,7 @@ To modify the installation script:
 
 ```bash
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/MeshTerm-OpenWrt.git
+git clone https://github.com/Securond/MeshTerm-OpenWrt.git
 cd MeshTerm-OpenWrt
 
 # Edit the script
@@ -351,7 +351,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ```bash
 ssh root@your-router
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/MeshTerm-OpenWrt/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/Securond/MeshTerm-OpenWrt/main/install.sh | sh
 ```
 
 Всё! Скрипт автоматически:
@@ -370,7 +370,7 @@ ssh root@your-router
 # Клонируйте этот репозиторий
 opkg update
 opkg install git-http ca-bundle
-git clone --depth 1 https://github.com/YOUR_USERNAME/MeshTerm-OpenWrt.git /opt/meshterm-install
+git clone --depth 1 https://github.com/Securond/MeshTerm-OpenWrt.git /opt/meshterm-install
 
 # Запустите скрипт установки
 cd /opt/meshterm-install
@@ -572,7 +572,7 @@ opkg remove ttyd luci-compat python3-pip python3-venv python3-dev python3-cffi g
 
 ```bash
 # Клонируйте этот репозиторий
-git clone https://github.com/YOUR_USERNAME/MeshTerm-OpenWrt.git
+git clone https://github.com/Securond/MeshTerm-OpenWrt.git
 cd MeshTerm-OpenWrt
 
 # Отредактируйте скрипт

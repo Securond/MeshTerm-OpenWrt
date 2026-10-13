@@ -6,7 +6,7 @@
 set -eu
 
 REPO_URL="${REPO_URL:-https://github.com/jpmartineau/MeshTerm.git}"
-INSTALLER_REPO="${INSTALLER_REPO:-https://github.com/YOUR_USERNAME/MeshTerm-OpenWrt.git}"
+INSTALLER_REPO="${INSTALLER_REPO:-https://github.com/Securond/MeshTerm-OpenWrt.git}"
 INSTALL_DIR="${INSTALL_DIR:-/opt/meshterm}"
 SKIP_SWAP="${SKIP_SWAP:-0}"
 WITH_BLE="${WITH_BLE:-0}"
