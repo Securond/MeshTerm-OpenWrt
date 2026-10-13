@@ -45,8 +45,10 @@ Full-featured TUI MeshTerm client for Meshtastic network, adapted for OpenWrt / 
 
 ```bash
 ssh root@your-router
-curl -fsSL https://raw.githubusercontent.com/your-username/MeshTerm-OpenWrt/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/MeshTerm-OpenWrt/main/install.sh | sh
 ```
+
+Replace `YOUR_USERNAME` with your GitHub username.
 
 That's it! The script will:
 - Install all dependencies
@@ -64,7 +66,7 @@ ssh root@your-router
 # Clone this repository
 opkg update
 opkg install git-http ca-bundle
-git clone --depth 1 https://github.com/your-username/MeshTerm-OpenWrt.git /opt/meshterm-install
+git clone --depth 1 https://github.com/YOUR_USERNAME/MeshTerm-OpenWrt.git /opt/meshterm-install
 
 # Run the setup script
 cd /opt/meshterm-install
@@ -268,7 +270,7 @@ To modify the installation script:
 
 ```bash
 # Clone this repository
-git clone https://github.com/your-username/MeshTerm-OpenWrt.git
+git clone https://github.com/YOUR_USERNAME/MeshTerm-OpenWrt.git
 cd MeshTerm-OpenWrt
 
 # Edit the script
@@ -348,8 +350,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ### Установка в одну строку (Рекомендуется)
 
 ```bash
-ssh root@ваш-роутер
-curl -fsSL https://raw.githubusercontent.com/your-username/MeshTerm-OpenWrt/main/install.sh | sh
+ssh root@your-router
+curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/MeshTerm-OpenWrt/main/install.sh | sh
 ```
 
 Всё! Скрипт автоматически:
@@ -363,12 +365,12 @@ curl -fsSL https://raw.githubusercontent.com/your-username/MeshTerm-OpenWrt/main
 
 ```bash
 # Подключитесь к роутеру по SSH
-ssh root@ваш-роутер
+ssh root@your-router
 
 # Клонируйте этот репозиторий
 opkg update
 opkg install git-http ca-bundle
-git clone --depth 1 https://github.com/your-username/MeshTerm-OpenWrt.git /opt/meshterm-install
+git clone --depth 1 https://github.com/YOUR_USERNAME/MeshTerm-OpenWrt.git /opt/meshterm-install
 
 # Запустите скрипт установки
 cd /opt/meshterm-install
@@ -414,10 +416,10 @@ sh openwrt-setup.sh SWAP_MB=512
 
 ```bash
 # Интерактивный TUI (требует PTY)
-ssh -t root@ваш-роутер meshterm
+ssh -t root@your-router meshterm
 
 # Режим симулятора
-ssh root@ваш-роутер
+ssh root@your-router
 meshterm --mock
 
 # USB компаньон
@@ -430,12 +432,12 @@ meshterm --tcp HOST:PORT
 
 ### Веб-терминал (LuCI)
 
-1. Откройте LuCI в браузере: `http://ваш-роутер`
+1. Откройте LuCI в браузере: `http://your-router`
 2. Авторизуйтесь как root
 3. Перейдите в **Services → MeshTerm**
 4. Откроется веб-терминал с запущенным MeshTerm
 
-Или откройте напрямую: `http://ваш-роутер:7681`
+Или откройте напрямую: `http://your-router:7681`
 
 ## Расположение файлов
 
@@ -570,15 +572,15 @@ opkg remove ttyd luci-compat python3-pip python3-venv python3-dev python3-cffi g
 
 ```bash
 # Клонируйте этот репозиторий
-git clone https://github.com/your-username/MeshTerm-OpenWrt.git
+git clone https://github.com/YOUR_USERNAME/MeshTerm-OpenWrt.git
 cd MeshTerm-OpenWrt
 
 # Отредактируйте скрипт
 vi openwrt-setup.sh
 
 # Протестируйте на устройстве
-scp openwrt-setup.sh root@ваш-роутер:/tmp/
-ssh root@ваш-роутер
+scp openwrt-setup.sh root@your-router:/tmp/
+ssh root@your-router
 sh /tmp/openwrt-setup.sh
 ```
 
