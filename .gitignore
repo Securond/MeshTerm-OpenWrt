@@ -1,0 +1,42 @@
+# OpenWrt build artifacts
+*.ipk
+*.bin
+*.trx
+*.img
+*.squashfs
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+/tmp/
+*.tmp
+*.bak
+*~
+
+# Logs
+*.log
+
+# Backup files
+backup-*
+*.tar.gz
+*.b64
