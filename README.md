@@ -293,15 +293,11 @@ Apache License 2.0 - see [LICENSE](LICENSE) for details.
 - **Original MeshTerm:** [jpmartineau/MeshTerm](https://github.com/jpmartineau/MeshTerm)
 - **OpenWrt:** [openwrt/openwrt](https://github.com/openwrt/openwrt)
 - **ttyd:** [tsl0922/ttyd](https://github.com/tsl0922/ttyd)
-- **Meshtastic:** [meshtastic](https://meshtastic.org)
 
 ## Support
 
 For issues and questions:
 - 🐛 Open an issue on GitHub
-- 📖 Check the main [MeshTerm documentation](https://github.com/jpmartineau/MeshTerm)
-- 🌐 Visit [Meshtastic documentation](https://meshtastic.org/docs)
-- 💬 Join [Meshtastic Discord](https://discord.gg/meshtastic)
 
 ## Contributing
 
